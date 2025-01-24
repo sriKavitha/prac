@@ -63,14 +63,20 @@ export const config = {
     capabilities: [
         {
             maxInstances: 2,
-            browserName: 'chrome'
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless'],
+    },
             //,
             // browserVersion: '133.0.6943.16'
         }
         ,
         {
             maxInstances: -1,
-            browserName: 'firefox'
+            browserName: 'firefox',
+            'moz:firefoxOptions': {
+               args: ['-headless']
+    }
         },
         // {
         //     browserName: 'safari'
