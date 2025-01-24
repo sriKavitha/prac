@@ -15,7 +15,7 @@ describe('Test', () => {
         allureReporter.addStory('mrmnyl-1024')
         allureReporter.addFeature("Title Verification")
         await browser.url('/');
-        await expect(browser).toHaveTitle('Practice E-Commerce Site – ASDET Unicorns')
+        await expect(browser).toHaveTitle('Practice E-Commerce Site – SDET Unicorns')
     });
     it('Testcase-3', async() => {
 
