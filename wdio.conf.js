@@ -256,11 +256,11 @@ export const config = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-    afterTest: async function(test, context, { error }) {
-        if (error) {
-            await browser.takeScreenshot();
-        }
-    }
+    // afterTest: async function(test, context, { error }) {
+    //     if (error) {
+    //         await browser.takeScreenshot();
+    //     }
+    // }
 
     /**
      * Hook that gets executed after the suite has ended
